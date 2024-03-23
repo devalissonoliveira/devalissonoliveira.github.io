@@ -1,0 +1,134 @@
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --color1:#D00000;
+    --color2:#FFBA08;
+    --color3:#3F88C5;
+    --color4:#032B43;
+    --color5:#136F63;
+    --cor-base:#032B43;
+    --cor-bg-perfil:#fff;
+    --cor-font-projetos: #fff;
+
+    --font-padrao: "Roboto", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--color3), var(--color4));
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: var(--font-padrao);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil-container{
+    background-color: var(--cor-bg-perfil);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    color: var(--cor-base);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+}
+
+#perfil-container img{
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--cor-base);
+    padding: 2px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+}
+
+#perfil-container p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+#perfil-container .list-contatos{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    margin: 15px auto;
+}
+
+#perfil-container .item-contato{
+    border: 1px solid var(--cor-base);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil-container .item-contato:hover{
+    background-color: var(--cor-base);
+}
+
+#perfil-container .item-contato i{
+    color: var(--cor-base);
+    font-size: 25px;
+}
+
+#perfil-container .item-contato i:hover{
+    color: var(--cor-font-projetos);
+}
+
+
+#perfil-container hr{
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: var(--cor-base);
+}
+
+#perfil-container h3{
+    margin: 15px 0;
+}
+
+.list-projetos{
+    width: 100%;
+}
+
+#perfil-container .item-projeto{
+    transition: all 0.4s ease-in-out;
+}
+
+#perfil-container .item-projeto:hover{
+    transform: scale(1.1);
+}
+
+#perfil-container .link-projeto{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: var(--cor-base);
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 10px;
+    color: var(--cor-font-projetos);
+    gap: 15px;
+}
